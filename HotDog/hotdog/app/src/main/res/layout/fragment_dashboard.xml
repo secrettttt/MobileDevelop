@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent">-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/text_dashboard"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<!--    tools:context=".TopsListActivity">-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_arrow_back_black_18dp" />
+
+        <TextView
+            android:id="@+id/text_dashboard"
+            android:layout_width="310dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="订阅"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            app:layout_constraintLeft_toRightOf="@+id/leftBarTopList"
+            app:layout_constraintTop_toBottomOf="parent" />
+<!--            android:id="@+id/topListName"-->
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/subscribe_1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+
+                android:padding="20dp"
+                android:src="@mipmap/bilibili" />
+            <ImageView
+                android:id="@+id/subscribe_2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="20dp"
+                android:src="@mipmap/douyin" />
+            <ImageView
+                android:id="@+id/subscribe_3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="20dp"
+                android:src="@mipmap/zhihu" />
+            <ImageView
+                android:id="@+id/subscribe_4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="20dp"
+                android:src="@mipmap/toutiao" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/subscribe_5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="20dp"
+                android:src="@mipmap/weibo" />
+            <ImageView
+                android:id="@+id/subscribe_6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="30dp"
+                android:src="@drawable/plus" />
+            <ImageView
+                android:id="@+id/subscribe_7"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="30dp"
+                android:src="@drawable/minus" />
+            <ImageView
+                android:id="@+id/subscribe_8"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="30dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/subscribe_9"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="20dp" />
+            <ImageView
+                android:id="@+id/subscribe_10"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="20dp" />
+            <ImageView
+                android:id="@+id/subscribe_11"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="20dp"/>
+            <ImageView
+                android:id="@+id/subscribe_12"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="20dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/subscribe_13"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="20dp" />
+            <ImageView
+                android:id="@+id/subscribe_14"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="20dp" />
+            <ImageView
+                android:id="@+id/subscribe_15"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="20dp" />
+            <ImageView
+                android:id="@+id/subscribe_16"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="20dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/subscribe_17"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="20dp" />
+            <ImageView
+                android:id="@+id/subscribe_18"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="20dp"/>
+            <ImageView
+                android:id="@+id/subscribe_19"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="20dp" />
+            <ImageView
+                android:id="@+id/subscribe_20"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="20dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/subscribe_21"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="20dp"/>
+            <ImageView
+                android:id="@+id/subscribe_22"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="20dp" />
+            <ImageView
+                android:id="@+id/subscribe_23"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="20dp"/>
+            <ImageView
+                android:id="@+id/subscribe_24"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

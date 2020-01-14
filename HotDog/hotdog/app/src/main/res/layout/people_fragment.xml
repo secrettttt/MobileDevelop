@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:src="@mipmap/logo"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/people_tv_zh1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="账号:"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toRightOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        android:layout_marginRight="20dp"
+        />
+
+    <TextView
+        android:id="@+id/people_tv_zh2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="abc"
+        android:textSize="20dp"
+        android:gravity="center"
+        app:layout_constraintLeft_toRightOf="@+id/people_tv_zh1"
+        app:layout_constraintTop_toTopOf="@+id/people_tv_zh1"
+        android:layout_marginRight="20dp"
+        />
+
+    <TextView
+        android:id="@+id/people_tv_mima1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="密码:"
+        android:textSize="20dp"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="@id/people_tv_zh1"
+        app:layout_constraintTop_toBottomOf="@+id/people_tv_zh1"
+        android:layout_marginRight="20dp"
+        />
+    <TextView
+        android:id="@+id/people_tv_mima2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="123"
+        android:textSize="20dp"
+        android:gravity="center"
+        app:layout_constraintLeft_toRightOf="@+id/people_tv_mima1"
+        app:layout_constraintTop_toTopOf="@+id/people_tv_mima1"
+        android:layout_marginRight="20dp"
+        />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="登录"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/people_tv_mima1"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

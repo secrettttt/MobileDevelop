@@ -1,0 +1,36 @@
+/* miniprogram/pages/footer/footer.wxss */
+.footer{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:left;
+  background-color: #FFFFFF;
+}
+
+.footer-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:left;
+  width: 25%;
+}
+
+.footer-logo{
+  display: inline-block;
+  position: relative;
+  width: 70rpx;
+  height: 70rpx;
+  margin-top: 20rpx;
+  margin-left: 60rpx;
+  margin-right: 60rpx;
+}
+
+.footer-text{
+  display: inline-block;
+  font-size: 30rpx;
+  color: #666666;
+  margin-bottom: 10rpx;
+}

@@ -1,0 +1,61 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+<!--    <com.hanks.htextview.rainbow.RainbowTextView-->
+<!--        android:id="@+id/topnid"-->
+<!--        android:layout_gravity="center_vertical"-->
+<!--        android:layout_width="70dp"-->
+<!--        android:layout_height="70dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:gravity="left"-->
+<!--        android:text="Top 1"-->
+<!--        android:textSize="20sp"-->
+<!--        app:colorSpace="150dp"-->
+<!--        app:colorSpeed="4dp"-->
+<!--        android:lines="2"-->
+<!--        android:ellipsize="end"/>-->
+    <TextView
+        android:id="@+id/topnid"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="121"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:typeface="monospace"
+        />
+    <TextView
+        android:id="@+id/newsName"
+        android:layout_gravity="center_vertical"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:text="这是一段中文"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        android:lines="2"
+        android:ellipsize="end"/>
+
+
+
+</LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#BEBEBE	"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        />
+</LinearLayout>

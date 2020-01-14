@@ -1,0 +1,49 @@
+<!--miniprogram/pages/join/join.wxml-->
+
+<view class="container">
+  <view class="logoContainer">
+    <image src="logo.png" class="logo"></image>
+  </view>
+ <form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="loginFormContainer">
+    <view class='username'>
+      <view>
+        <text>用户名：</text>
+      </view>
+      <view class='input'>
+        <input placeholder='请输入用户名' name='username'></input>
+      </view>
+    </view>
+
+    <view class='password'>
+      <view>
+        <text>密 码：</text>
+      </view>
+      <view class='input'>
+        <input placeholder='请输入密码' password='true' name='password'></input>
+      </view>
+    </view>
+
+    <view class='password'>
+      <view>
+        <text>确认密码：</text>
+      </view>
+      <view class='input'>
+        <input placeholder='请输入密码' password='true' name='password'></input>
+      </view>
+    </view>
+
+    <button class='btn' form-type='submit' type='primary'>注册</button>
+    <!-- <navigator class='btnContainer' bindtap="joinSuccessful" url="../index/index">
+      <button class='btn' form-type='submit' type='primary'>注册</button>
+    </navigator> -->
+
+    <view class='textContainer' bindtap='contactUs'>
+      <navigator class='textContactUs' url="../join/join">
+        <text>联系我们</text>
+      </navigator>
+    </view>
+  </view>
+ </form>
+</view>
+

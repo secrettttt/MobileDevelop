@@ -1,0 +1,60 @@
+<!--index.wxml-->
+<image src="indexbg.jpg" class="bg"></image>
+
+<view class="container">
+  
+  <view class="logoContainer">
+    <image src="logo.png" class="logo"></image>
+  </view>
+ <form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="loginFormContainer">
+    <view class='username'>
+      <view>
+        <text>用户名：</text>
+      </view>
+      <view class='input'>
+        <input placeholder='请输入用户名' name='username'></input>
+      </view>
+    </view>
+
+    <view class='password'>
+      <view>
+        <text>密 码：</text>
+      </view>
+      <view class='input'>
+        <input placeholder='请输入密码' password='true' name='password'></input>
+      </view>
+    </view>
+
+    <view class='remenberPasswordContainer'>
+      <radio-group name="remenberPassword">
+        <label><radio color="#0080FF" value="1"/>记住密码</label>
+      </radio-group>
+    </view> 
+    <button class='btn' form-type='submit' type='primary'>登录</button>
+    <!-- <navigator class='btnContainer' bindtap="loginSuccessful" url="../personalpage/personalpage">
+      <button class='btn' form-type='submit' type='primary'>登录</button>
+    </navigator> -->
+
+    <view class='textContainer'>
+      <navigator class='textJoin' url="../join/join">
+        <text>注册</text>
+      </navigator>
+      <text class='textEmpty'>    </text>
+      <text class='textHelp' bindtap='helpButtonTap'>帮助</text>
+    </view>
+
+    <view class='sentenceContainer'>
+      <text class='sentence'>hotdog, 为您呈现热点</text>
+    </view>
+  </view>
+ </form>
+  <modal title="HotDog帮助" hidden="{{modalHidden}}" bindconfirm="modalConfirm" bindcancel="modalCandel">
+    <view>
+      <!-- <image class="imageHelp" src="logo.png" mode='aspectFill'></image> -->
+    </view>
+    <view><text decode="{{true}}">&emsp;&emsp;感谢使用HotDog!HotDog将会成为你获得实时热门信息的关键渠道。</text></view>
+    <view><text decode="{{true}}">&emsp;&emsp;通过使用它，你能在最短的时间内获得各大热门网站（知乎、虎扑、豆瓣、天涯、微博等）的实时热搜榜。你可以通过评论、点赞发表你自己的看法，也可以通过订阅、收藏获得个性化的信息。</text></view>
+  </modal>
+ 
+</view>

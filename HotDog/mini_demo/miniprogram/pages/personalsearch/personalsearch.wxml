@@ -1,0 +1,378 @@
+<!--miniprogram/pages/personalsearch/personalsearch.wxml-->
+<view class="container">
+  <view class="searchTitleContainer">
+    <image src="gotoleft.png" class="gotoLeft" bindtap="goBack"></image>
+    <view class="weui-search-bar__form">
+      <!-- 搜索框 -->
+      <view class="weui-search-bar__box">
+        <input type="text" class="weui-search-bar__input" bindinput='getInputValue' />
+      </view>
+    </view>
+    <image src="footer-search.png" class="searchIcon" bindtap="startSearch"></image>
+  </view>
+
+
+  <view class="searchContainer">
+    <view class="searchType">综合</view>
+    <view class='line'></view>
+    <view class="appGridContainer">
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="知乎" url="../toplist/toplist">
+        <image src="zhihu.png" class="appGridLogo"></image>
+        <text class="appGridText">知乎</text>
+      </navigator>
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="微博" url="../toplist/toplist">
+        <image src="weibo.png" class="appGridLogo"></image>
+        <text class="appGridText">微博</text>
+      </navigator>
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="今日头条" url="../toplist/toplist">
+        <image src="toutiao.png" class="appGridLogo"></image>
+        <text class="appGridText">今日头条</text>
+      </navigator>
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="豆瓣" url="../toplist/toplist">
+        <image src="douban.png" class="appGridLogo"></image>
+        <text class="appGridText">豆瓣</text>
+      </navigator>
+    </view>
+
+
+
+    <view class="appGridContainer">
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="知乎日报" url="../toplist/toplist">
+        <image src="zhihuribao.png" class="appGridLogo"></image>
+        <text class="appGridText">知乎日报</text>
+      </navigator>
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="抖音" url="../toplist/toplist">
+        <image src="douyin.png" class="appGridLogo"></image>
+        <text class="appGridText">抖音</text>
+      </navigator>
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="微信" url="../toplist/toplist">
+        <image src="weixin.png" class="appGridLogo"></image>
+        <text class="appGridText">微信</text>
+      </navigator>
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="知识精选" url="../toplist/toplist">
+        <image src="zhishijingxuan.png" class="appGridLogo"></image>
+        <text class="appGridText">知识精选</text>
+      </navigator>
+    </view>
+
+
+    <view class="appGridContainer">
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="jianshu" url="../toplist/toplist">
+        <image src="jianshu.png" class="appGridLogo"></image>
+        <text class="appGridText">简书</text>
+      </navigator>
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="网易" url="../toplist/toplist">
+        <image src="wangyi.png" class="appGridLogo"></image>
+        <text class="appGridText">网易</text>
+      </navigator>
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="百度热搜" url="../toplist/toplist">
+        <image src="baiduresou.png" class="appGridLogo"></image>
+        <text class="appGridText">百度热搜</text>
+      </navigator>
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="澎湃新闻" url="../toplist/toplist">
+        <image src="pengpaixinwen.png" class="appGridLogo"></image>
+        <text class="appGridText">澎湃新闻</text>
+      </navigator>
+    </view>
+
+
+
+
+
+  </view>
+
+  <view class="searchContainer">
+    <view class="searchType">科技</view>
+    <view class='line'></view>
+
+    <view class="appGridContainer">
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="IT之家" url="../toplist/toplist">
+        <image src="itzhijia.png" class="appGridLogo"></image>
+        <text class="appGridText">IT之家</text>
+      </navigator>
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="中关村在线" url="../toplist/toplist">
+        <image src="zhongguancunzaixian.png" class="appGridLogo"></image>
+        <text class="appGridText">中关村在线</text>
+      </navigator>
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="果壳" url="../toplist/toplist">
+        <image src="guoke.png" class="appGridLogo"></image>
+        <text class="appGridText">果壳</text>
+      </navigator>
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="36Kr" url="../toplist/toplist">
+        <image src="36kr.png" class="appGridLogo"></image>
+        <text class="appGridText">36Kr</text>
+      </navigator>
+    </view>
+
+    <view class="appGridContainer">
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="虎嗅" url="../toplist/toplist">
+        <image src="huxiu.png" class="appGridLogo"></image>
+        <text class="appGridText">虎嗅</text>
+      </navigator>
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="少数派" url="../toplist/toplist">
+        <image src="saoshupai.png" class="appGridLogo"></image>
+        <text class="appGridText">少数派</text>
+      </navigator>
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="雷科技" url="../toplist/toplist">
+        <image src="leikeji.png" class="appGridLogo"></image>
+        <text class="appGridText">雷科技</text>
+      </navigator>
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="快科技" url="../toplist/toplist">
+        <image src="kuaikeji.png" class="appGridLogo"></image>
+        <text class="appGridText">快科技</text>
+      </navigator>
+    </view>
+
+    <view class="appGridContainer">
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="爱范" url="../toplist/toplist">
+        <image src="aifan.png" class="appGridLogo"></image>
+        <text class="appGridText">爱范</text>
+      </navigator>
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="钛媒体" url="../toplist/toplist">
+        <image src="taimeiti.png" class="appGridLogo"></image>
+        <text class="appGridText">钛媒体</text>
+      </navigator>
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="机器之心" url="../toplist/toplist">
+        <image src="jiqizhixin.png" class="appGridLogo"></image>
+        <text class="appGridText">机器之心</text>
+      </navigator>
+    </view>
+
+
+
+
+
+  </view>
+
+  <view class="searchContainer">
+    <view class="searchType">娱乐</view>
+    <view class='line'></view>
+    <view class="appGridContainer">
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="Bilibili" url="../toplist/toplist">
+        <image src="bilibili.png" class="appGridLogo"></image>
+        <text class="appGridText">BiliBili</text>
+      </navigator>
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="涨姿势" url="../toplist/toplist">
+        <image src="zhangzhishi.png" class="appGridLogo"></image>
+        <text class="appGridText">涨姿势</text>
+      </navigator>
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="AcFun" url="../toplist/toplist">
+        <image src="acfun.png" class="appGridLogo"></image>
+        <text class="appGridText">AcFun</text>
+      </navigator>
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="趣头条" url="../toplist/toplist">
+        <image src="qutoutiao.png" class="appGridLogo"></image>
+        <text class="appGridText">趣头条</text>
+      </navigator>
+    </view>
+
+
+    <view class="appGridContainer">
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="场库" url="../toplist/toplist">
+        <image src="changku.png" class="appGridLogo"></image>
+        <text class="appGridText">场库</text>
+      </navigator>
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="马蜂窝" url="../toplist/toplist">
+        <image src="mafengwo.png" class="appGridLogo"></image>
+        <text class="appGridText">马蜂窝</text>
+      </navigator>
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="机核" url="../toplist/toplist">
+        <image src="jihe.png" class="appGridLogo"></image>
+        <text class="appGridText">机核</text>
+      </navigator>
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="猫扑" url="../toplist/toplist">
+        <image src="maopu.png" class="appGridLogo"></image>
+        <text class="appGridText">猫扑</text>
+      </navigator>
+    </view>
+
+
+    <view class="appGridContainer">
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="煎蛋" url="../toplist/toplist">
+        <image src="jiandan.png" class="appGridLogo"></image>
+        <text class="appGridText">煎蛋</text>
+      </navigator>
+    </view>
+
+
+
+
+  </view>
+
+  <view class="searchContainer">
+    <view class="searchType">社区</view>
+    <view class='line'></view>
+    <view class="appGridContainer">
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="V2EX" url="../toplist/toplist">
+        <image src="v2ex.png" class="appGridLogo"></image>
+        <text class="appGridText">V2EX</text>
+      </navigator>
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="吾爱破解" url="../toplist/toplist">
+        <image src="wuaipojie.png" class="appGridLogo"></image>
+        <text class="appGridText">吾爱破解</text>
+      </navigator>
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="水木社区" url="../toplist/toplist">
+        <image src="shuimushequ.png" class="appGridLogo"></image>
+        <text class="appGridText">水木社区</text>
+      </navigator>
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="贴吧" url="../toplist/toplist">
+        <image src="tieba.png" class="appGridLogo"></image>
+        <text class="appGridText">贴吧</text>
+      </navigator>
+    </view>
+
+
+    <view class="appGridContainer">
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="CbnData" url="../toplist/toplist">
+        <image src="cbndata.png" class="appGridLogo"></image>
+        <text class="appGridText">CbnData</text>
+      </navigator>
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="威锋社区" url="../toplist/toplist">
+        <image src="weifengshequ.png" class="appGridLogo"></image>
+        <text class="appGridText">威锋社区</text>
+      </navigator>
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="一亩三分地" url="../toplist/toplist">
+        <image src="yimusanfendi.png" class="appGridLogo"></image>
+        <text class="appGridText">一亩三分地</text>
+      </navigator>
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="汽车之家" url="../toplist/toplist">
+        <image src="qichezhijia.png" class="appGridLogo"></image>
+        <text class="appGridText">汽车之家</text>
+      </navigator>
+    </view>
+
+
+  </view>
+
+  <view class="searchContainer">
+    <view class="searchType">购物</view>
+    <view class='line'></view>
+
+    <view class="appGridContainer">
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="京东拼团" url="../toplist/toplist">
+        <image src="jingdongpintuan.png" class="appGridLogo"></image>
+        <text class="appGridText">京东拼团</text>
+      </navigator>
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="京东秒杀" url="../toplist/toplist">
+        <image src="jingdongmiaosha.png" class="appGridLogo"></image>
+        <text class="appGridText">京东秒杀</text>
+      </navigator>
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="淘宝实时跑量榜" url="../toplist/toplist">
+        <image src="taobaoshishipaoliangbang.png" class="appGridLogo"></image>
+        <text class="appGridText">淘宝实时跑量榜</text>
+      </navigator>
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="淘宝TOP销售榜" url="../toplist/toplist">
+        <image src="taobaotopxiaoshoubang.png" class="appGridLogo"></image>
+        <text class="appGridText">淘宝TOP销售榜</text>
+      </navigator>
+    </view>
+
+    <view class="appGridContainer">
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="什么值得买" url="../toplist/toplist">
+        <image src="shenmezhidemai.png" class="appGridLogo"></image>
+        <text class="appGridText">什么值得买</text>
+      </navigator>
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="京东自营（秒杀榜）" url="../toplist/toplist">
+        <image src="jingdongzhiyingmiaoshabang.png" class="appGridLogo"></image>
+        <text class="appGridText">京东自营（秒杀榜）</text>
+      </navigator>
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="京东自营(热销榜）" url="../toplist/toplist">
+        <image src="jingdongzhiyingrexiaobang.png" class="appGridLogo"></image>
+        <text class="appGridText">京东自营(热销榜）</text>
+      </navigator>
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="京东热销榜" url="../toplist/toplist">
+        <image src="jingdongrexiaobang.png" class="appGridLogo"></image>
+        <text class="appGridText">京东热销榜</text>
+      </navigator>
+    </view>
+  </view>
+
+  <view class="searchContainer">
+    <view class="searchType">IT</view>
+    <view class='line'></view>
+
+
+    <view class="appGridContainer">
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="Github" url="../toplist/toplist">
+        <image src="github.png" class="appGridLogo"></image>
+        <text class="appGridText">Github</text>
+      </navigator>
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="开发者头条" url="../toplist/toplist">
+        <image src="kaifazhetoutiao.png" class="appGridLogo"></image>
+        <text class="appGridText">开发者头条</text>
+      </navigator>
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="开源中国" url="../toplist/toplist">
+        <image src="kaiyuanzhongguo.png" class="appGridLogo"></image>
+        <text class="appGridText">开源中国</text>
+      </navigator>
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="CSDN" url="../toplist/toplist">
+        <image src="csdn.png" class="appGridLogo"></image>
+        <text class="appGridText">CSDN</text>
+      </navigator>
+    </view>
+
+    <view class="appGridContainer">
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="Linux中国" url="../toplist/toplist">
+        <image src="linuxzhongguo.png" class="appGridLogo"></image>
+        <text class="appGridText">Linux中国</text>
+      </navigator>
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="掘金" url="../toplist/toplist">
+        <image src="juejin.png" class="appGridLogo"></image>
+        <text class="appGridText">掘金</text>
+      </navigator>
+    </view>
+
+
+
+
+
+
+
+  </view>
+
+
+  <view class="searchContainer">
+    <view class="searchType">币圈</view>
+    <view class='line'></view>
+
+
+    <view class="appGridContainer">
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="火星财经" url="../toplist/toplist">
+        <image src="huoxingcaijing.png" class="appGridLogo"></image>
+        <text class="appGridText">火星财经</text>
+      </navigator>
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="币世界" url="../toplist/toplist">
+        <image src="bishijie.png" class="appGridLogo"></image>
+        <text class="appGridText">币世界</text>
+      </navigator>
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="金色财经" url="../toplist/toplist">
+        <image src="jinsecaijing.png" class="appGridLogo"></image>
+        <text class="appGridText">金色财经</text>
+      </navigator>
+    </view>
+
+  </view>
+
+
+
+  <view class="searchContainer">
+    <view class="searchType">体育</view>
+    <view class='line'></view>
+
+
+    <view class="appGridContainer">
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="虎扑NBA" url="../toplist/toplist">
+        <image src="hupunba.png" class="appGridLogo"></image>
+        <text class="appGridText">虎扑NBA</text>
+      </navigator>
+      <navigator class="appGridItem" bindtap="gotoToplist" data-text="懂球帝" url="../toplist/toplist">
+        <image src="dongqiudi.png" class="appGridLogo"></image>
+        <text class="appGridText">懂球帝</text>
+      </navigator>
+    </view>
+
+  </view>
+
+    <import src ="../footer/footer.wxml"/>
+    <template is="footer"/>
+  </view>

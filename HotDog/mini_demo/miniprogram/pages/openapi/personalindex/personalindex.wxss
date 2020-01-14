@@ -1,0 +1,153 @@
+/* miniprogram/personalindex/personalindex.wxss */
+
+.container {
+  position: absolute;
+  text-align: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 700rpx;
+  display: block;
+}
+
+.searchContainer{
+  display: block;
+  position: relative;
+  text-align: center;
+}
+
+.weui-search-bar {
+  position: relative;
+  padding: 8px 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  box-sizing: border-box;
+  background-color: #EFEFF4;
+  border-top: 1rpx solid #D7D6DC;
+  border-bottom: 1rpx solid #D7D6DC;
+}
+.weui-icon-search_in-box {
+  position: absolute;
+  left: 10px;
+  top: 7px;
+}
+.weui-search-bar__form {
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+          flex: auto;
+  border-radius: 5px;
+  background: #FFFFFF;
+  border: 1rpx solid #E6E6EA;
+}
+.weui-search-bar__box {
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 80%;
+  box-sizing: border-box;
+  z-index: 1;
+}
+.weui-search-bar__input {
+  height: 28px;
+  line-height: 28px;
+  font-size: 14px;
+}
+.weui-search-bar__cancel-btn {
+  margin-left: 10px;
+  line-height: 28px;
+  color: #0080FF;
+  font-style: bold;
+  white-space: nowrap;
+}
+
+.titlePageContainer{
+  display: block;
+  position: relative;
+  text-align: center;
+}
+
+.titlePage{
+  display: inline-block;
+  position: relative;
+  width: 95%;
+  height: 400rpx;
+  margin-top:15rpx;
+  margin-left:15rpx;
+  margin-right:15rpx;
+  margin-bottom:15rpx;
+}
+
+.appGridContainer{
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:left;
+}
+
+.appGridItem{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:left;
+  width: 25%;
+}
+
+.appGridLogo{
+  display: inline-block;
+  position: relative;
+  width: 90rpx;
+  height: 90rpx;
+  margin-top: 20rpx;
+  margin-left: 60rpx;
+  margin-right: 60rpx;
+  margin-bottom: 20rpx;
+}
+
+.appGridText{
+  display: inline-block;
+  font-size: 30rpx;
+  color: #666666;
+  margin-bottom: 50rpx;
+}
+
+.footer{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:left;
+  background-color: #FFFFFF;
+}
+
+.footer-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:left;
+  width: 25%;
+}
+
+.footer-logo{
+  display: inline-block;
+  position: relative;
+  width: 70rpx;
+  height: 70rpx;
+  margin-top: 20rpx;
+  margin-left: 60rpx;
+  margin-right: 60rpx;
+}
+
+.footer-text{
+  display: inline-block;
+  font-size: 30rpx;
+  color: #666666;
+  margin-bottom: 10rpx;
+}

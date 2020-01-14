@@ -1,0 +1,27 @@
+<!--miniprogram/pages/personalsubscribe/personalsubscribe.wxml-->
+<!--miniprogram/pages/personalpage/personalpage.wxml-->
+<view class="container">
+
+  <view class="subscribeTitleContainer">
+    <text class="subscribeTitle">订阅</text>
+  </view>
+
+   <!-- <view class='subscribeGridContainer'>
+      <view class="subscribeGridItem" wx:for="{{info}}" wx:for-index="index" wx:for-item="item" bindtap="gotoToplist" wx:if="{{index<12}}" data-text="{{info}}" >
+        <image src="github.png" class="subscribeGridLogo"></image>
+        <text class="subscribeGridText">{{info}}</text>
+    </view>
+  </view> -->
+   <view class="subscribeGridContainer">
+    <view class="subscribeGridItem" wx:for="{{info}}" wx:for-index="index" wx:for-item="item"   >
+      <image src="../personalsearch/{{item.imgurl}}.png" class="subscribeGridLogo" bindtap="gotoToplist" data-variable="{{item.subscribe}}"></image>
+      <view class="subscribeGridText" bindtap="gotoToplist" data-variable="{{item.subscribe}}">{{item.subscribe}}</view>
+    </view>
+  </view>
+  <import src ="../footer/footer.wxml"/>
+  <template is="footer"/>
+  <menu hidden id='menu' bind:addEvent="_addEvent" bind:deleteLotsEvent="_deleteLotsEvent" />
+  <dialog id='dialog' title='选择您要订阅的热榜' bind:confirmEvent="_confirmEvent"></dialog>
+</view>
+
+
