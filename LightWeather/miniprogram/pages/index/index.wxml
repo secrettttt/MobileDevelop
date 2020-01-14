@@ -1,0 +1,222 @@
+<swiper class='swiperClass' previous-margin="30px" next-margin="30px" circular bindchange="bindchange" easing-function="linear">
+  <swiper-item>
+    <view src="{{item}}" class="slide-image">
+      <image src="../../assets/background/{{backgroundCode}}.jpg" class="bg"></image>
+      <menu hidden id='menu' bind:changeCity="changeCity" bind:changeTheme="changeTheme" />
+      <dialog id='dialog' title='切换主题' bind:confirmEvent="_confirmEvent"></dialog>
+      <view class="container">
+        <view class="nowWeather">
+          <view class="city w">{{city}} {{district}}</view>
+          <view class="road w">{{street}}</view>
+          <view class="temp w b">{{tmp}}°</view>
+          <view class="weather w">{{txt}} | 空气质量 {{qlty}}</view>
+          <view class="weather w">{{dir}} | {{sc}}级</view>
+          <view wx:if="{{sc == '微风'}}" class="weather w">微风</view>
+          <view class="weather w">相对湿度 | {{hum}}%</view>
+          <view class="weather w">体感温度 | {{fl}}°</view>
+        </view>
+      </view>
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view src="{{item}}" class="slide-image">
+      <image src="../../assets/background/{{bjbackgroundCode}}.jpg" class="bg"></image>
+      <menu hidden id='menu' bind:changeCity="changeCity" bind:changeTheme="changeTheme" />
+      <dialog id='dialog' title='切换主题' bind:confirmEvent="_confirmEvent"></dialog>
+      <view class="container">
+        <view class="nowWeather">
+          <view class="city w">北京市</view>
+          <view class="road w"></view>
+          <view class="temp w b">{{bjtmp}}°</view>
+          <view class="weather w">{{bjtxt}} | 空气质量 {{bjqlty}}</view>
+          <view class="weather w">{{bjdir}} | {{bjsc}}级</view>
+          <view wx:if="{{sc == '微风'}}" class="weather w">微风</view>
+          <view class="weather w">相对湿度 | {{bjhum}}%</view>
+          <view class="weather w">体感温度 | {{bjfl}}°</view>
+        </view>
+      </view>
+    </view>
+  </swiper-item>
+
+  <swiper-item>
+    <view src="{{item}}" class="slide-image">
+      <image src="../../assets/background/{{shbackgroundCode}}.jpg" class="bg"></image>
+      <menu hidden id='menu' bind:changeCity="changeCity" bind:changeTheme="changeTheme" />
+      <dialog id='dialog' title='切换主题' bind:confirmEvent="_confirmEvent"></dialog>
+      <view class="container">
+        <view class="nowWeather">
+          <view class="city w">上海市</view>
+          <view class="road w"></view>
+          <view class="temp w b">{{shtmp}}°</view>
+          <view class="weather w">{{shtxt}} | 空气质量 {{shqlty}}</view>
+          <view class="weather w">{{shdir}} | {{shsc}}级</view>
+          <view wx:if="{{sc == '微风'}}" class="weather w">微风</view>
+          <view class="weather w">相对湿度 | {{shhum}}%</view>
+          <view class="weather w">体感温度 | {{shfl}}°</view>
+        </view>
+      </view>
+    </view>
+  </swiper-item>
+
+  <swiper-item>
+    <view src="{{item}}" class="slide-image">
+      <image src="../../assets/background/{{gzbackgroundCode}}.jpg" class="bg"></image>
+      <menu hidden id='menu' bind:changeCity="changeCity" bind:changeTheme="changeTheme" />
+      <dialog id='dialog' title='切换主题' bind:confirmEvent="_confirmEvent"></dialog>
+      <view class="container">
+        <view class="nowWeather">
+          <view class="city w">广州市</view>
+          <view class="road w"></view>
+          <view class="temp w b">{{gztmp}}°</view>
+          <view class="weather w">{{gztxt}} | 空气质量 {{gzqlty}}</view>
+          <view class="weather w">{{gzdir}} | {{gzsc}}级</view>
+          <view wx:if="{{sc == '微风'}}" class="weather w">微风</view>
+          <view class="weather w">相对湿度 | {{gzhum}}%</view>
+          <view class="weather w">体感温度 | {{gzfl}}°</view>
+        </view>
+      </view>
+    </view>
+  </swiper-item>
+
+  <swiper-item>
+    <view src="{{item}}" class="slide-image">
+      <image src="../../assets/background/{{szbackgroundCode}}.jpg" class="bg"></image>
+      <menu hidden id='menu' bind:changeCity="changeCity" bind:changeTheme="changeTheme" />
+      <dialog id='dialog' title='切换主题' bind:confirmEvent="_confirmEvent"></dialog>
+      <view class="container">
+        <view class="nowWeather">
+          <view class="city w">深圳市</view>
+          <view class="road w"></view>
+          <view class="temp w b">{{sztmp}}°</view>
+          <view class="weather w">{{sztxt}} | 空气质量 {{szqlty}}</view>
+          <view class="weather w">{{szdir}} | {{gzsc}}级</view>
+          <view wx:if="{{sc == '微风'}}" class="weather w">微风</view>
+          <view class="weather w">相对湿度 | {{szhum}}%</view>
+          <view class="weather w">体感温度 | {{szfl}}°</view>
+        </view>
+      </view>
+    </view>
+  </swiper-item>
+
+  <swiper-item>
+    <view src="{{item}}" class="slide-image">
+      <image src="../../assets/background/{{hzbackgroundCode}}.jpg" class="bg"></image>
+      <menu hidden id='menu' bind:changeCity="changeCity" bind:changeTheme="changeTheme" />
+      <dialog id='dialog' title='切换主题' bind:confirmEvent="_confirmEvent"></dialog>
+      <view class="container">
+        <view class="nowWeather">
+          <view class="city w">杭州市</view>
+          <view class="road w"></view>
+          <view class="temp w b">{{hztmp}}°</view>
+          <view class="weather w">{{hztxt}} | 空气质量 {{hzqlty}}</view>
+          <view class="weather w">{{hzdir}} | {{hzsc}}级</view>
+          <view wx:if="{{sc == '微风'}}" class="weather w">微风</view>
+          <view class="weather w">相对湿度 | {{hzhum}}%</view>
+          <view class="weather w">体感温度 | {{hzfl}}°</view>
+        </view>
+      </view>
+    </view>
+  </swiper-item>
+
+  <swiper-item>
+    <view src="{{item}}" class="slide-image">
+      <image src="../../assets/background/{{njbackgroundCode}}.jpg" class="bg"></image>
+      <menu hidden id='menu' bind:changeCity="changeCity" bind:changeTheme="changeTheme" />
+      <dialog id='dialog' title='切换主题' bind:confirmEvent="_confirmEvent"></dialog>
+      <view class="container">
+        <view class="nowWeather">
+          <view class="city w">南京市</view>
+          <view class="road w"></view>
+          <view class="temp w b">{{njtmp}}°</view>
+          <view class="weather w">{{njtxt}} | 空气质量 {{njqlty}}</view>
+          <view class="weather w">{{njdir}} | {{njsc}}级</view>
+          <view wx:if="{{sc == '微风'}}" class="weather w">微风</view>
+          <view class="weather w">相对湿度 | {{njhum}}%</view>
+          <view class="weather w">体感温度 | {{njfl}}°</view>
+        </view>
+      </view>
+    </view>
+  </swiper-item>
+
+
+
+  <swiper-item>
+    <view src="{{item}}" class="slide-image">
+      <image src="../../assets/background/{{whbackgroundCode}}.jpg" class="bg"></image>
+      <menu hidden id='menu' bind:changeCity="changeCity" bind:changeTheme="changeTheme" />
+      <dialog id='dialog' title='切换主题' bind:confirmEvent="_confirmEvent"></dialog>
+      <view class="container">
+        <view class="nowWeather">
+          <view class="city w">武汉市</view>
+          <view class="road w"></view>
+          <view class="temp w b">{{whtmp}}°</view>
+          <view class="weather w">{{whtxt}} | 空气质量 {{whqlty}}</view>
+          <view class="weather w">{{whdir}} | {{whsc}}级</view>
+          <view wx:if="{{sc == '微风'}}" class="weather w">微风</view>
+          <view class="weather w">相对湿度 | {{whhum}}%</view>
+          <view class="weather w">体感温度 | {{whfl}}°</view>
+        </view>
+      </view>
+    </view>
+  </swiper-item>
+
+    <swiper-item>
+    <view src="{{item}}" class="slide-image">
+      <image src="../../assets/background/{{tjbackgroundCode}}.jpg" class="bg"></image>
+      <menu hidden id='menu' bind:changeCity="changeCity" bind:changeTheme="changeTheme" />
+      <dialog id='dialog' title='切换主题' bind:confirmEvent="_confirmEvent"></dialog>
+      <view class="container">
+        <view class="nowWeather">
+          <view class="city w">天津市</view>
+          <view class="road w"></view>
+          <view class="temp w b">{{tjtmp}}°</view>
+          <view class="weather w">{{tjtxt}} | 空气质量 {{tjqlty}}</view>
+          <view class="weather w">{{tjdir}} | {{tjsc}}级</view>
+          <view wx:if="{{sc == '微风'}}" class="weather w">微风</view>
+          <view class="weather w">相对湿度 | {{tjhum}}%</view>
+          <view class="weather w">体感温度 | {{tjfl}}°</view>
+        </view>
+      </view>
+    </view>
+  </swiper-item>
+
+  <swiper-item>
+    <view src="{{item}}" class="slide-image">
+      <image src="../../assets/background/{{cdbackgroundCode}}.jpg" class="bg"></image>
+      <menu hidden id='menu' bind:changeCity="changeCity" bind:changeTheme="changeTheme" />
+      <dialog id='dialog' title='切换主题' bind:confirmEvent="_confirmEvent"></dialog>
+      <view class="container">
+        <view class="nowWeather">
+          <view class="city w">成都市</view>
+          <view class="road w"></view>
+          <view class="temp w b">{{cdtmp}}°</view>
+          <view class="weather w">{{cdtxt}} | 空气质量 {{cdqlty}}</view>
+          <view class="weather w">{{cddir}} | {{cdsc}}级</view>
+          <view wx:if="{{sc == '微风'}}" class="weather w">微风</view>
+          <view class="weather w">相对湿度 | {{cdhum}}%</view>
+          <view class="weather w">体感温度 | {{cdfl}}°</view>
+        </view>
+      </view>
+    </view>
+  </swiper-item>
+
+    <swiper-item>
+    <view src="{{item}}" class="slide-image">
+      <image src="../../assets/background/{{cqbackgroundCode}}.jpg" class="bg"></image>
+      <menu hidden id='menu' bind:changeCity="changeCity" bind:changeTheme="changeTheme" />
+      <dialog id='dialog' title='切换主题' bind:confirmEvent="_confirmEvent"></dialog>
+      <view class="container">
+        <view class="nowWeather">
+          <view class="city w">重庆市</view>
+          <view class="road w"></view>
+          <view class="temp w b">{{cqtmp}}°</view>
+          <view class="weather w">{{cqtxt}} | 空气质量 {{cqqlty}}</view>
+          <view class="weather w">{{cqdir}} | {{cqsc}}级</view>
+          <view wx:if="{{sc == '微风'}}" class="weather w">微风</view>
+          <view class="weather w">相对湿度 | {{cqhum}}%</view>
+          <view class="weather w">体感温度 | {{cqfl}}°</view>
+        </view>
+      </view>
+    </view>
+  </swiper-item>
+</swiper>
